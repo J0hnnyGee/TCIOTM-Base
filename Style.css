@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mochiy Pop P One;
+}
+
+:root {
+  --shadow-color: 203deg 45% 54%;
+  --shadow-elevation-low:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  /*background-color: #B8E4FF;*/
+  background-image: linear-gradient(
+  180deg,
+  hsl(203deg 100% 91%) 0%,
+  hsl(203deg 100% 91%) 11%,
+  hsl(203deg 100% 92%) 22%,
+  hsl(203deg 100% 92%) 33%,
+  hsl(203deg 100% 93%) 44%,
+  hsl(203deg 100% 93%) 56%,
+  hsl(203deg 100% 94%) 67%,
+  hsl(203deg 100% 94%) 78%,
+  hsl(203deg 100% 95%) 89%,
+  hsl(203deg 100% 95%) 100%
+);
+}
+
+h1{
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  20px -10px 35px rgba(255,255,255,0.2);
+  font-size: 2.5em;
+}
+
+h2{
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.1),
+  20px -10px 35px rgba(255,255,255,0.2);
+  font-size: 2em;
+}
+
+h3{
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  20px -10px 35px rgba(255,255,255,0.2);
+}
+
+p{
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.1),
+  20px -10px 35px rgba(255,255,255,0.1);
+}
+
+.welcome{
+  display: flex;
+  flex-direction: row;
+  height: 40em;
+}
+
+
+.welcome_txt{
+  margin: 0 1em 0 1em;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 2.5em;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                   20px -10px 35px rgba(255,255,255,0.2);
+}
+.welcome_txt>h1{
+  color:rgb(240, 160, 40, 1);
+  font-size: 2em;
+}
+
+.nome{
+  color: #3c8862;
+}
+
+
+.welcome_txt>p>strong{
+  text-decoration: line-through 0.18em;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(240, 160, 40, 1);
+  -webkit-animation: wavy 2s ease-in;
+
+}
+
+@-webkit-keyframes wavy {
+  0% {  text-decoration-color:rgb(240, 160, 40, 0)}
+      40% {  text-decoration-color:rgb(240, 160, 40, 0.4)}
+      60% {  text-decoration-color:rgb(240, 160, 40, 0.7)}
+      100% {  text-decoration-color:rgb(240, 160, 40, 1)}
+}
+
+.welcome_pic{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.welcome_pic>img{
+  width: 25em;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sezione{
+  height: 100em;
+  width: 95%;
+  margin: auto;
+}
+
+
+.cover_line{ /*prima che si attivi con scroll*/
+  opacity: 0;
+  width: 2em;
+
+}
+
+.cover_line.active{ /*una volta attivata*/
+  opacity: 1;
+  z-index: 5;
+  overflow: hidden;
+  align-items: left;
+  -webkit-animation: imgltr 2s ease-in-out;
+   animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes imgltr {
+  0% {  width: 0%}
+  10%{width 10%}
+      40% {}
+      60%{}
+
+      100% {overflow: visible; width: 100%}
+}
+
+.cover_line>img{
+  width: 17em;
+  position: relative;
+  top: -1.7em;
+  margin-bottom: -5em;
+  filter: drop-shadow(2px 8px 6px rgba(0,0,0,0.2));
+   pointer-events: none;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.instagram>.social>h2{
+background: -webkit-linear-gradient(90deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.segui{
+  position: relative;
+  top: .8em;
+  margin-left: 1em;
+  background-color: #0095F6;
+  border: none;
+  border-radius: 30px;
+  padding: 1px 15px 5px 15px;
+  font-size: .8em;
+  color: white;
+  text-align: center;
+  height: 3em;
+  cursor: pointer;
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.segui:hover{
+  background-color: #19a5ff;
+  transition: .5s ease-in;
+  transform: scale(1.048) perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+}
+
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+}
+
+.post{
+    width: 100%;
+    margin: .5em;
+    overflow: hidden;
+}
+
+.post>a>img{
+  width: 90%;
+
+  box-shadow: var(--shadow-elevation-medium);
+  border-radius: .3em;
+  object-fit: contain;
+
+}
+
+.post>a>img:hover{
+  opacity: 0.8;
+  transition: .25s ease-in;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color:black;
+  text-decoration: none;
+}
+
+.interaction{
+  margin-top: .8em;
+}
+
+
+.tiktok{
+  margin-top: 8em;
+}
+
+
+.tiktok>.social>h2{ /*effetto tiktok*/
+filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
+
+.segui-1{
+  background-color: #FE2C55;
+  position: relative;
+  top: .8em;
+  margin-left: 1em;
+  border: none;
+  border-radius: 30px;
+  padding: 1px 15px 5px 15px;
+  font-size: .8em;
+  color: white;
+  text-align: center;
+  height: 3em;
+  cursor: pointer;
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+
+.segui-1:hover{
+  background-color: #f74064;
+  transition: .5s ease-in;
+  transform: scale(1.048) perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+}
+
+
+.tiktok>p{
+  margin-top: 1em;
+}
+
+.tiktok>.grid>.post{
+  width: 100%;
+  margin: 1em 1.6em 0 1.6em;
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 0;
+}
+
+.post>h3{
+  margin-bottom: 1em;
+}
+
+.anteprima>img{
+  z-index: 3;
+  width: 100%;
+  opacity: .8;
+  border-radius: .6em;
+}
+
+.anteprima{
+  width: 80%;
+  position: relative;
+  display: inline-block;
+}
+
+.playcontainer{
+  position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.anteprima:hover .tiktok_wpp{
+  opacity: 1;
+  transition: .5s ease-out;
+}
+
+.play{
+  width: 10em;
+}
+
+
+ /*facendo hover dell'anteprima (o del play button) si attiva l'effetto)*/
+.anteprima:hover .play, .play:hover{
+  width: 12em;
+  transition: .5s ease-in;
+}
+
+.pampling>h2{
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  color: #0078d3;
+}

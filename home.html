@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='it'>
+  <head>
+    <meta charset='UTF-8'\>
+    <link rel="icon" href="Icona.png">
+    <link href='style.css' rel='stylesheet'\>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <title>The Cat Is On The MarCat</title>
+  <script>
+  function reveal() { //funzione che attiva la transizione on scroll
+    //source: https://alvarotrigo.com/blog/css-animations-scroll/
+var reveals = document.querySelectorAll(".cover_line")
+for (var i = 0; i < reveals.length; i++) {
+ var windowHeight = window.innerHeight;
+ var elementTop = reveals[i].getBoundingClientRect().top;
+ var elementVisible = 40; //dopo quanti pixel di visibilità si attiva
+ if (elementTop < windowHeight - elementVisible) {
+   reveals[i].classList.add("active");
+ }
+ //else { aggiungi se vuoi che si attivi sempre
+    //  reveals[i].classList.remove("active");
+}
+}
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
+  </script>
+
+  </head>
+  <body>
+    <div class='page'>
+    <!--  Inizio parte benvenuto -->
+      <div class='welcome'>
+          <div class='welcome_txt'> <h1> Hi!</h1>
+            <p>My name is <span class='nome'>Federica</span><br>
+              Welcome to my <strong id='wavy'>MarCat</strong>!</p>
+          </div>
+          <div class='welcome_pic'>
+
+            <img src='Logo.png'/>
+
+        </div>
+      </div>
+      <!--  Fine parte benvenuto -->
+
+        <div class='sezione'>
+          <h1>I miei lavori</h1>
+          <div class='cover_line'>
+            <img src="linea1.svg"/>
+          </div>
+          <div class='instagram'>
+            <div class="social">
+              <h2>Instagram</h2>
+              <a href="https://www.instagram.com/thecatisonthemarcat/" target="_blank">
+                <button class="segui">Segui</button>
+              </a>
+            </div>
+            <div class="grid">
+              <div class="post">
+                <a href="https://www.instagram.com/p/CZwMAFwtTke/" target="_blank">
+                <img src='ig/Marcat.jpg'/>
+                <div class="interaction">
+                  <strong>Marcat</strong>
+                </a>
+                </div>
+              </div>
+              <div class="post">
+                <a href="https://www.instagram.com/p/CaSZ43wjCkj/" target="_blank">
+                  <img src='ig/Choose_yourself.jpg'/>
+                  <div class="interaction">
+                    <strong>Choose yourself</strong>
+                  </a>
+                  </div>
+                </div>
+              <div class="post">
+                <a href="https://www.instagram.com/p/Ca2Ku7eNFk3/" target="_blank">
+                <img src='ig/mimosa.jpg'/>
+                <div class="interaction">
+                  <strong>Mimosa</strong>
+                </a>
+                </div>
+              </div>
+              <div class="post">
+                <a href="https://www.instagram.com/p/CaZ-oAXF26L/" target="_blank">
+                <img src='ig/Fede_cat.jpg'/>
+                <div class="interaction">
+                  <strong>Diventa un gatto!</strong>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tiktok">
+            <div class="social">
+              <h2>TikTok</h2>
+              <a href="https://www.tiktok.com/@nagashi_fireandsnow" target="_blank">
+                <button class="segui-1">Segui</button>
+              </a>
+            </div>
+            <p>Seguimi e potrai trovare:</p>
+            <div class="grid">
+              <div class="post">
+                <h3>Consigli di disegno</h3>
+                <a href='https://www.tiktok.com/@nagashi_fireandsnow/video/7071563552535874822?is_from_webapp=1&sender_device=pc&web_id7074637620950025733' target="_blank">
+                  <div  class='anteprima'>
+                    <img src='Tiktok/Tecnica.jpg' class="tiktok_wpp">
+                    <div class="playcontainer">
+                      <img src='Tiktok/play.svg' class="play">
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="post">
+                  <h3>Meme artistici</h3>
+                  <a href='https://www.tiktok.com/@nagashi_fireandsnow/video/7072401238725348614?is_from_webapp=1&sender_device=pc&web_id7074637620950025733' target="_blank">
+                    <div  class='anteprima'>
+                      <img src='Tiktok/ArtMeme.jpg' class="tiktok_wpp">
+                      <div class="playcontainer">
+                        <img src='Tiktok/play.svg' class="play">
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="post">
+                    <h3>Il mio percorso d'arte</h3>
+                    <a href='https://www.tiktok.com/@nagashi_fireandsnow/video/7074134662108499206?is_from_webapp=1&sender_device=pc&web_id7074637620950025733' target="_blank">
+                      <div  class='anteprima'>
+                        <img src='Tiktok/Sketch.jpg' class="tiktok_wpp">
+                        <div class="playcontainer">
+                          <img src='Tiktok/play.svg' class="play">
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
