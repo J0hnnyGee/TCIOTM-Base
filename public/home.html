@@ -1,239 +1,270 @@
 <!DOCTYPE html>
 <html lang='it'>
-  <head>
-    <meta charset='UTF-8'\>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Icona.png">
-    <link href='Style.css' rel='stylesheet'\>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-    <title>The Cat Is On The MarCat</title>
-  <script>
-  function reveal() { //funzione che attiva la transizione on scroll
-    //source: https://alvarotrigo.com/blog/css-animations-scroll/
-var reveals = document.querySelectorAll(".cover_line")
-for (var i = 0; i < reveals.length; i++) {
- var windowHeight = window.innerHeight;
- var elementTop = reveals[i].getBoundingClientRect().top;
- var elementVisible = 40; //dopo quanti pixel di visibilità si attiva
- if (elementTop < windowHeight - elementVisible) {
-   reveals[i].classList.add("active");
- }
- //else { aggiungi se vuoi che si attivi sempre
-    //  reveals[i].classList.remove("active");
-}
-}
-window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
-reveal();
+<head>
+  <meta charset='UTF-8' \>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Icona.png">
+  <link href='Style.css' rel='stylesheet' \>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <title>The Cat Is On The MarCat</title>
+  <script>
+    function reveal() { //funzione che attiva la transizione on scroll
+      //source: https://alvarotrigo.com/blog/css-animations-scroll/
+      var reveals = document.querySelectorAll(".cover_line")
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 40; //dopo quanti pixel di visibilità si attiva
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+        //else { aggiungi se vuoi che si attivi sempre
+        //  reveals[i].classList.remove("active");
+      }
+    }
+    window.addEventListener("scroll", reveal);
+
+    // To check the scroll position on page load
+    reveal();
 
 
   </script>
 
-  </head>
-  <body>
-    <div class='page'>
+</head>
+
+<body>
+  <div class='page'>
     <!--  Inizio parte benvenuto -->
-      <div class='welcome'>
-          <div class='welcome_txt'> <h1> Ciao!</h1>
-            <p>Mi chiamo <span class='nome'>Federica</span><br>
-            Benvenut* nel mio <span class="marcat">MarCat</span>!
-              </p>
+    <div class='welcome'>
+      <div class='welcome_txt'>
+        <h1> Ciao!</h1>
+        <p>Mi chiamo <span class='nome'>Nagashi</span><br>
+          Benvenut* nel mio <span class="portfolio">portfolio</span>!
+        </p>
+        <div class="social_icons">
+          <div class="social_icon">
+            <a href="https://www.instagram.com/nagashi__art/" target="_blank">
+              <img src="icone/ig.png">
+            </a>
           </div>
-          <div class='welcome_pic'>
-
-            <img src='Logo.png'/>
-
+          <div class="social_icon">
+            <a href="https://www.tiktok.com/@nagashi_art" target="_blank">
+              <img src="icone/tiktok.png">
+            </a>
+          </div>
+          <div class="social_icon">
+            <a href='mailto:federicacappiello8@gmail.com'>
+              <img src="icone/email.png">
+            </a>
+          </div>
         </div>
       </div>
-      <!--  Fine parte benvenuto -->
-      <div class='sezione'>
-        <h1>About me!</h1>
-        <div class='cover_line'>
-          <img src="linea1.svg"/>
+      <div class='welcome_pic'>
+        <div class='propic_image_handler'>
+          <img class="rectangle_propic" src='propic.jpg'>
         </div>
-        <div class='about'>
-          <div class='about_txt'>
-              <p>Mi chiamo <span class='nome'>Federica</span>
-                , sin da piccola sono appassionata
-              di <span class='disegno'>disegno</span>, e nonstante qualche periodo di lontananza,
-            è una <span class='passione'>passione</span> che da sempre mi accompagna, e che sto cercando di
-          <span class='studiare'>studiare</span> e conoscere sempre più!<br>Sui miei profili social faccio
-        disegni e video a tema anime, film, e qualsiasi altra cosa mi <span class='curiosita'>incuriosisca</span>.
-      <br>Seguimi per rimanere aggiornat*!</p>
-            </div>
-        </div>
+      </div>
     </div>
-        <div class='sezione'>
-          <h1>I miei lavori</h1>
-          <div class='cover_line'>
-            <img src="linea1.svg"/>
+    <!--  Fine parte benvenuto -->
+    <div class='sezione'>
+      <h1>About me!</h1>
+      <div class='cover_line'>
+        <img src="linea1.svg" />
+      </div>
+      <div class='about'>
+        <div class='about_txt'>
+          <p>Mi chiamo <span class='nome'>Federica</span>, in arte <span class='nome'>Nagashi</span>, sin da piccola
+            sono appassionata di
+            <span class='disegno'>disegno</span>, e nonstante qualche periodo di lontananza, è una passione che da
+            sempre mi accompagna.<br>
+            Ad oggi sono una studentessa di <span class='animazione'>animazione</span> pronta a migliorarsi sempre di
+            più, e qui potete trovare alcuni dei miei lavori!<br>
+            Se vi piacciono, o se volete seguirmi lungo la mia <span class='avventura'>avventura artistica</span>, mi
+            potete seguire sui
+            social dove ci sono novità riguardo i miei disegni, animazioni e video a tema: anime, film, e
+            qualsiasi altra cosa mi incuriosisca <span class='disegno'>(ed è nerd)</span>.<br>
+            Seguimi per rimanere aggiornat*!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='sezione'>
+      <h1>Portfolio</h1>
+      <div class='cover_line'>
+        <img src="linea1.svg" />
+      </div>
+      <h2>Le mie <span class="disegno">animazioni</span></h2>
+      <div class="portfolio_grid">
+        <div class="portfolio_element">
+          <img class="animazione_gif" src="portfolio/animazioni/fungo.gif">
+          <p>Funghetto Salterino</p>
+        </div>
+        <div class="portfolio_element">
+          <img class="animazione_gif" src="portfolio/animazioni/pennello.gif">
+          <p>Pennello</p>
+        </div>
+        <div class="portfolio_element">
+          <img class="animazione_gif" src="portfolio/animazioni/pinguino.gif">
+          <p>Pinguino Sognatore</p>
+        </div>
+        <div class="portfolio_element">
+          <img class="animazione_gif" src="portfolio/animazioni/tazzina.gif">
+          <p>Bustina Del The</p>
+        </div>
+      </div>
+      <h2>I miei <span class="animazione">disegni</span></h2>
+      <div class="grid">
+        <div class="portfolio_pic">
+          <img src="portfolio/disegni/bloodborne.jpg">
+          <p>Bloodborne</p>
+        </div>
+        <div class="portfolio_pic_rectangular">
+          <img src="portfolio/disegni/angel.jpg" style="height: 90%; width: 100%;">
+          <p>Angel Dust</p>
+        </div>
+        <div class="portfolio_pic_rectangular">
+          <img src="portfolio/disegni/layout.jpg" style="height: 90%; width: 100%;">
+          <p>Studio Layout</p>
+        </div>
+        <div class="portfolio_pic_rectangular">
+          <img src="portfolio/disegni/character.jpg" style="height: 90%; width: 100%;">
+          <p>Concept Art</p>
+        </div>
+        <div class="portfolio_pic">
+          <img src="portfolio/disegni/gattino.jpg">
+          <p>Gattino Arcano</p>
+        </div>
+        <div class="portfolio_pic_square">
+          <img src="portfolio/disegni/elfo.jpg">
+          <p>Elfo Oscuro</p>
+        </div>
+        <div class="portfolio_pic_square">
+          <img src="portfolio/disegni/ice.jpg">
+          <p>Blue Tiefling</p>
+        </div>
+        <div class="portfolio_pic_square">
+          <img src="portfolio/disegni/fincher.jpg">
+          <p>Spiderverse Style Portrait</p>
+        </div>
+      </div>
+    </div>
+    <div class='sezione'>
+      <h1>I miei social</h1>
+      <div class='cover_line'>
+        <img src="linea1.svg" />
+      </div>
+      <div class='instagram'>
+        <div class="social">
+          <h2>Instagram</h2>
+          <a href="https://www.instagram.com/nagashi__art/" target="_blank">
+            <button class="segui">Segui</button>
+          </a>
+        </div>
+        <div class="grid">
+          <div class="post">
+            <a href="https://www.instagram.com/p/C4vrGMYMSs7/" target="_blank">
+              <img src='ig/spiderverse.jpg' style="height: 90%; width: 100%;" />
+              <div class="interaction">
+                <p>Miguel O'Hara</p>
+              </div>
+            </a>
           </div>
-          <div class='instagram'>
-            <div class="social">
-              <h2>Instagram</h2>
-              <a href="https://www.instagram.com/thecatisonthemarcat/" target="_blank">
-                <button class="segui">Segui</button>
-              </a>
-            </div>
-            <div class="grid">
-              <div class="post">
-                <a href="https://www.instagram.com/p/CaSZ43wjCkj/" target="_blank">
-                  <img src='ig/ChooseYourself.jpg'/>
-                  <div class="interaction">
-                    <p>Choose yourself</p>
-                  </a>
-                  </div>
-                </div>
-              <div class="post">
-                <a href="https://www.instagram.com/p/Ca2Ku7eNFk3/" target="_blank">
-                <img src='ig/Mimosa.jpg'/>
-                <div class="interaction">
-                  <p>Mimosa</p>
-                </a>
-                </div>
+
+          <div class="post">
+            <a href="https://www.instagram.com/reel/Ct9bHeRr7uR/" target="_blank">
+              <img src='ig/ladro_cuori.jpg' style="height: 90%; width: 100%;" />
+              <div class="interaction">
+                <p>Il Ladro Di Cuori</p>
               </div>
-              <div class="post">
-                <a href="https://www.instagram.com/p/CaZ-oAXF26L/" target="_blank">
-                <img src='ig/Fede_cat.jpg'/>
-                <div class="interaction">
-                  <p>Diventa un gatto!</p>
-                </a>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
-          <div class="tiktok">
-            <div class="social">
-              <h2>TikTok</h2>
-              <a href="https://www.tiktok.com/@nagashi_fireandsnow" target="_blank">
-                <button class="segui-1">Segui</button>
-              </a>
-            </div>
-            <p>Seguimi e potrai trovare:</p>
-            <div class="grid">
-              <div class="post">
-                <h3>Consigli di disegno</h3>
-                <a href='https://www.tiktok.com/@nagashi_fireandsnow/video/7071563552535874822?is_from_webapp=1&sender_device=pc&web_id7074637620950025733' target="_blank">
-                  <div  class='anteprima'>
-                    <img src='Tiktok/Tecnica.jpg' class="tiktok_wpp">
-                    <div class="playcontainer">
-                      <img src='Tiktok/play.svg' class="play">
-                    </div>
-                  </div>
-                </a>
-                </div>
-                <div class="post">
-                  <h3>Meme artistici</h3>
-                  <a href='https://www.tiktok.com/@nagashi_fireandsnow/video/7072401238725348614?is_from_webapp=1&sender_device=pc&web_id7074637620950025733' target="_blank">
-                    <div  class='anteprima'>
-                      <img src='Tiktok/ArtMeme.jpg' class="tiktok_wpp">
-                      <div class="playcontainer">
-                        <img src='Tiktok/play.svg' class="play">
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="post">
-                    <h3>Il mio percorso d'arte</h3>
-                    <a href='https://www.tiktok.com/@nagashi_fireandsnow/video/7074134662108499206?is_from_webapp=1&sender_device=pc&web_id7074637620950025733' target="_blank">
-                      <div  class='anteprima'>
-                        <img src='Tiktok/Sketch.jpg' class="tiktok_wpp">
-                        <div class="playcontainer">
-                          <img src='Tiktok/play.svg' class="play">
-                        </div>
-                      </div>
-                    </a>
-                    </div>
-                  </div>
+          <div class="post">
+            <a href="https://www.instagram.com/reel/CwDEafCMazI/" target="_blank">
+              <img src='ig/nimona.jpg' />
+              <div class="interaction">
+                <p>Nimona</p>
+              </div>
+            </a>
           </div>
-          <div class='pinterest'>
-            <div class="social">
-              <h2>Pinterest</h2>
-              <a href="https://www.pinterest.it/Nagashi_fireandsnow/_created/" target="_blank">
-                <button class="segui-1">Segui</button>
-              </a>
-            </div>
-            <div class="grid">
-              <div class="post">
-                <a href="https://www.pinterest.it/pin/931893347867221141/" target="_blank">
-                <img src='Pinterest/CaThor.jpg'/>
-                <div class="interaction">
-                  <p>CaThor</p>
-                </a>
-                </div>
+          <div class="post">
+            <a href="https://www.instagram.com/p/Cz9Lzfusnb2/" target="_blank">
+              <img src='ig/materiali.jpg' />
+              <div class="interaction">
+                <p>Studio Textures</p>
               </div>
-              <div class="post">
-                <a href="https://www.pinterest.it/pin/931893347867291974/" target="_blank">
-                  <img src='Pinterest/Euphoria.jpg'/>
-                  <div class="interaction">
-                    <p>Euphoria</p>
-                  </a>
-                  </div>
-                </div>
-              <div class="post">
-                <a href="https://www.pinterest.it/pin/931893347867372058/" target="_blank">
-                <img src='Pinterest/Marceline.jpg'/>
-                <div class="interaction">
-                  <p>Rainbow Marceline and<br>Princess Bubblegum</p>
-                </a>
-                </div>
+            </a>
+          </div>
+          <div class="post">
+            <a href="https://www.instagram.com/p/Cugus9FscSL/" target="_blank">
+              <img src='ig/bambina.jpg' />
+              <div class="interaction">
+                <p>Spiderverse Style Portrait</p>
               </div>
-            </div>
+            </a>
+          </div>
+          <div class="post">
+            <a href="https://www.instagram.com/p/Cy0Py72MDa6/" target="_blank">
+              <img src='ig/avatar.jpg' />
+              <div class="interaction">
+                <p>Avatar</p>
+              </div>
+            </a>
           </div>
         </div>
-        <div class='sezione'>
-          <h1>Supportami!</h1>
-          <div class='cover_line'>
-            <img src="linea1.svg"/>
-          </div>
-          <div class="pampling">
-            <div class="social">
-              <h2>Pampling</h2>
-              <a href="https://www.pampling.com/comunidad/usuarios/794361-Nagashi" target="_blank">
-                <button class="segui">Segui</button>
-              </a>
-            </div>
-            <div class="grid">
-              <div class="post">
-                <a href="https://www.pampling.com/disenos/99146-Secret-Spiderman-s-WEB-FLUID-formula" target="_blank">
-                <img src='pampling/spiderweb.png'/>
-                <div class="interaction">
-                  <p>Secret Spiderman's<br>WEB FLUID formula</p>
-                </a>
-                </div>
-              </div>
-              <div class="post">
-                <a href="https://www.pampling.com/disenos/98041-Rainbow-T-Shirt-Marceline-and-Princess-Bubblegum" target="_blank">
-                  <img src='pampling/Marceline.jpg'/>
-                  <div class="interaction">
-                    <p>Rainbow T-Shirt Marceline<br>and Princess Bubblegum</p>
-                  </a>
-                  </div>
-                </div>
-              <div class="post">
-                <a href="https://www.pampling.com/disenos/97683-Choose-yourself-first" target="_blank">
-                <img src='pampling/choose_yourself.png'/>
-                <div class="interaction">
-                  <p>Choose yourself first</p>
-                </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="etsy">
-            <div class="social">
-              <h2>Etsy</h2>
-              <a href="https://www.etsy.com/it/shop/TheCatIsOnTheMarCat?ref=usf_2020" target="_blank">
-                <button class="segui-2">Segui</button>
-              </a>
-            </div>
-            <p>Coming soon...</p>
-          </div>
       </div>
 
+      <div class="tiktok">
+        <div class="social">
+          <h2>TikTok</h2>
+          <a href="https://www.tiktok.com/@nagashi_art" target="_blank">
+            <button class="segui-1">Segui</button>
+          </a>
+        </div>
+        <p>Seguimi e potrai trovare:</p>
+        <div class="grid">
+          <div class="post">
+            <h3>Studio Animazione</h3>
+            <a href='https://vm.tiktok.com/ZGePpdBAE' target="_blank">
+              <div class='anteprima'>
+                <img src='Tiktok/studio.jpg' class="tiktok_wpp">
+                <div class="playcontainer">
+                  <img src='Tiktok/play.svg' class="play">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="post">
+            <h3>Cosine Nerd</h3>
+            <a href='https://vm.tiktok.com/ZGePpkF5J' target="_blank">
+              <div class='anteprima'>
+                <img src='Tiktok/cosine.jpg' class="tiktok_wpp">
+                <div class="playcontainer">
+                  <img src='Tiktok/play.svg' class="play">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="post">
+            <h3>Challange Artistiche</h3>
+            <a href='https://vm.tiktok.com/ZGePp64ov' target="_blank">
+              <div class='anteprima'>
+                <img src='Tiktok/challenge.jpg' class="tiktok_wpp">
+                <div class="playcontainer">
+                  <img src='Tiktok/play.svg' class="play">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sezione">
+      <h1><span class="animazione">Grazie</span> per aver visitato il <span class="avventura">sito</span>!</h1>
+    </div>
   </div>
-  </body>
+</body>
+
 </html>
